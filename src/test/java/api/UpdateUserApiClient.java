@@ -15,7 +15,7 @@ public class UpdateUserApiClient {
         return given(successfulUpdateUserRequestSpec)
                 .body(body)
                 .when()
-                .delete("/api/users/2")
+                .put("/api/users/2")
                 .then()
                 .spec(successfulUpdateUserResponseSpec)
                 .extract()

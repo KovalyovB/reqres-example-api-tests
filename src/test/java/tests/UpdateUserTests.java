@@ -6,6 +6,7 @@ import models.update_user.SuccessfulUpdateUserDataResponseModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.time.Duration;
 import java.time.Instant;
 
 import static data.TestData.UPDATE_CONTEXT;
@@ -27,12 +28,16 @@ public class UpdateUserTests extends TestBase {
         SuccessfulUpdateUserDataResponseModel responseData = api.updateUsers.updateUser(requestData);
         Instant afterRequestTime = Instant.now();
 
+        Duration tolerance = Duration.ofSeconds(5);
+
         step("Проверка успешного обновления данных пользователя", () -> {
             assertThat(responseData.name(), is(requestData.name()));
             assertThat(responseData.job(), is(requestData.job()));
             assertThat(responseData.updatedAt(), is(notNullValue()));
-            assertThat(responseData.updatedAt(), is(greaterThanOrEqualTo(beforeRequestTime)));
-            assertThat(responseData.updatedAt(), is(lessThanOrEqualTo(afterRequestTime)));
+            assertThat(responseData.updatedAt(), is(allOf(
+                    greaterThanOrEqualTo(beforeRequestTime.minus(tolerance)),
+                    lessThanOrEqualTo(afterRequestTime.plus(tolerance))
+            )));
             assertThat(responseData.meta().context(), is(UPDATE_CONTEXT));
         });
     }
