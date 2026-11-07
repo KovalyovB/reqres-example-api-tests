@@ -1,0 +1,162 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ReqRes Users List Response",
+  "type": "object",
+  "required": [
+    "page",
+    "per_page",
+    "total",
+    "total_pages",
+    "data",
+    "support",
+    "_meta"
+  ],
+  "properties": {
+    "page": {
+      "type": "integer",
+      "description": "Номер текущей страницы"
+    },
+    "per_page": {
+      "type": "integer",
+      "description": "Количество элементов на странице"
+    },
+    "total": {
+      "type": "integer",
+      "description": "Общее количество элементов"
+    },
+    "total_pages": {
+      "type": "integer",
+      "description": "Общее количество страниц"
+    },
+    "data": {
+      "type": "array",
+      "description": "Массив пользователей",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "email",
+          "first_name",
+          "last_name",
+          "avatar"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Уникальный идентификатор пользователя"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Электронная почта пользователя"
+          },
+          "first_name": {
+            "type": "string",
+            "description": "Имя пользователя"
+          },
+          "last_name": {
+            "type": "string",
+            "description": "Фамилия пользователя"
+          },
+          "avatar": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL аватара пользователя"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "support": {
+      "type": "object",
+      "required": [
+        "url",
+        "text",
+        "sponsored_by"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Ссылка на спонсора/поддержку"
+        },
+        "text": {
+          "type": "string",
+          "description": "Текст поддержки/рекламы"
+        },
+        "sponsored_by": {
+          "type": "string",
+          "description": "Название спонсора"
+        }
+      },
+      "additionalProperties": false
+    },
+    "_meta": {
+      "type": "object",
+      "required": [
+        "powered_by",
+        "docs_url",
+        "upgrade_url",
+        "example_url",
+        "variant",
+        "message",
+        "cta",
+        "context"
+      ],
+      "properties": {
+        "powered_by": {
+          "type": "string",
+          "description": "Название сервиса"
+        },
+        "docs_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Ссылка на документацию"
+        },
+        "upgrade_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Ссылка на апгрейд"
+        },
+        "example_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Ссылка на пример приложения"
+        },
+        "variant": {
+          "type": "string",
+          "description": "Вариант API"
+        },
+        "message": {
+          "type": "string",
+          "description": "Сообщение"
+        },
+        "cta": {
+          "type": "object",
+          "required": [
+            "label",
+            "url"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "description": "Текст кнопки призыва к действию"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Ссылка кнопки призыва к действию"
+            }
+          },
+          "additionalProperties": false
+        },
+        "context": {
+          "type": "string",
+          "description": "Контекст"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

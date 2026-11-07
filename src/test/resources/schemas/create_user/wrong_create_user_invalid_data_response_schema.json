@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ErrorResponse",
+  "description": "Схема ответа с ошибкой регистрации",
+  "type": "object",
+  "properties": {
+    "error": {
+      "type": "string",
+      "description": "Текст сообщения об ошибке",
+      "examples": [
+        "Note: Only defined users succeed registration"
+      ]
+    }
+  },
+  "required": [
+    "error"
+  ],
+  "additionalProperties": false
+}
