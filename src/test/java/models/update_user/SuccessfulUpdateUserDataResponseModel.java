@@ -27,7 +27,9 @@ public record SuccessfulUpdateUserDataResponseModel(
             String variant,
             String message,
             Cta cta,
-            String context
+            String context,
+            Boolean persisted,
+            String persistence
     ) {
     }
 

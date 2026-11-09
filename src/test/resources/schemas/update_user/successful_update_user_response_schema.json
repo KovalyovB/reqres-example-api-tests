@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "SuccessfulUpdateUserResponse",
+  "title": "Successful Update User Response",
   "type": "object",
   "properties": {
     "name": {
@@ -9,23 +9,14 @@
     "job": {
       "type": "string"
     },
-    "id": {
-      "type": "string"
-    },
-    "createdAt": {
-      "type": "string",
-      "format": "date-time"
-    },
     "updatedAt": {
-      "type": "string",
-      "format": "date-time"
+      "type": "string"
     },
     "support": {
       "type": "object",
       "properties": {
         "url": {
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "text": {
           "type": "string"
@@ -48,16 +39,13 @@
           "type": "string"
         },
         "docs_url": {
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "upgrade_url": {
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "example_url": {
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "variant": {
           "type": "string"
@@ -72,8 +60,7 @@
               "type": "string"
             },
             "url": {
-              "type": "string",
-              "format": "uri"
+              "type": "string"
             }
           },
           "required": [
@@ -83,6 +70,12 @@
           "additionalProperties": false
         },
         "context": {
+          "type": "string"
+        },
+        "persisted": {
+          "type": "boolean"
+        },
+        "persistence": {
           "type": "string"
         }
       },
@@ -94,7 +87,9 @@
         "variant",
         "message",
         "cta",
-        "context"
+        "context",
+        "persisted",
+        "persistence"
       ],
       "additionalProperties": false
     }
@@ -102,6 +97,7 @@
   "required": [
     "name",
     "job",
+    "updatedAt",
     "support",
     "_meta"
   ],

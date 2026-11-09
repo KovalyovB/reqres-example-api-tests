@@ -1,7 +1,11 @@
 package models.create_user;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public record SuccessfulCreateUserResponseModel(
         Integer id,
         String token,
@@ -9,25 +13,32 @@ public record SuccessfulCreateUserResponseModel(
         @JsonProperty("_meta") Meta meta
 ) {
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
     public record Support(
             String url,
             String text,
-            @JsonProperty("sponsored_by") String sponsoredBy
+            String sponsoredBy
     ) {
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
     public record Meta(
-            @JsonProperty("powered_by") String poweredBy,
-            @JsonProperty("docs_url") String docsUrl,
-            @JsonProperty("upgrade_url") String upgradeUrl,
-            @JsonProperty("example_url") String exampleUrl,
+            String poweredBy,
+            String docsUrl,
+            String upgradeUrl,
+            String exampleUrl,
             String variant,
             String message,
             Cta cta,
-            String context
+            String context,
+            boolean persisted,
+            String persistence
     ) {
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public record Cta(
             String label,
             String url

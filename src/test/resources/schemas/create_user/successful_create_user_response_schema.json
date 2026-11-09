@@ -1,27 +1,23 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "ReqResSuccessResponse",
+  "title": "Successful create user response",
   "type": "object",
   "required": [
     "id",
-    "token",
-    "support",
-    "_meta"
+    "token"
   ],
+  "additionalProperties": true,
   "properties": {
     "id": {
       "type": "integer"
     },
     "token": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "support": {
       "type": "object",
-      "required": [
-        "url",
-        "text",
-        "sponsored_by"
-      ],
+      "additionalProperties": true,
       "properties": {
         "url": {
           "type": "string",
@@ -33,21 +29,11 @@
         "sponsored_by": {
           "type": "string"
         }
-      },
-      "additionalProperties": false
+      }
     },
     "_meta": {
       "type": "object",
-      "required": [
-        "powered_by",
-        "docs_url",
-        "upgrade_url",
-        "example_url",
-        "variant",
-        "message",
-        "cta",
-        "context"
-      ],
+      "additionalProperties": true,
       "properties": {
         "powered_by": {
           "type": "string"
@@ -70,12 +56,18 @@
         "message": {
           "type": "string"
         },
+        "context": {
+          "type": "string"
+        },
+        "persisted": {
+          "type": "boolean"
+        },
+        "persistence": {
+          "type": "string"
+        },
         "cta": {
           "type": "object",
-          "required": [
-            "label",
-            "url"
-          ],
+          "additionalProperties": true,
           "properties": {
             "label": {
               "type": "string"
@@ -84,15 +76,9 @@
               "type": "string",
               "format": "uri"
             }
-          },
-          "additionalProperties": false
-        },
-        "context": {
-          "type": "string"
+          }
         }
-      },
-      "additionalProperties": false
+      }
     }
-  },
-  "additionalProperties": false
+  }
 }
