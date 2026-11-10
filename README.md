@@ -52,13 +52,6 @@
   <img src="src/test/java/images/jenkins_api.png" alt="Jenkins Build" width="800"/>
 </div>
 
-### 🎛️ Параметры сборки
-
-- 🌐 BROWSER (браузер, по умолчанию chrome)
-- 🔢 BROWSER_VERSION (версия браузера, по умолчанию 100.0)
-- 📐 BROWSER_SIZE (размер окна браузера, по умолчанию 1920x1080)
-- 🖥️ HEADLESS (Использование GUI при прогоне автотестов, по умолчанию GUI=true)
-
 ---
 
 ## 💻 Запуск автотестов
