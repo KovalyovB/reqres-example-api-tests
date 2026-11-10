@@ -119,7 +119,7 @@
 Результаты автопрогонов автоматически отображаются прямо в задаче Jira — статус тестов, ссылки на Allure отчет и подробная информация о прохождении. 🚀
 
 <div align="center">
-  <img src="src/test/java/images/jira.png" alt="Много Диванов" width="800"/>
+  <img src="src/test/java/images/jira_api.png" alt="Много Диванов" width="800"/>
 </div>
 
 ---
