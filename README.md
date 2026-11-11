@@ -1,7 +1,7 @@
-# Проект по автоматизации тестирования API для сайта [«Reqres»](https://www.mnogodivanov.ru/)
+# Проект по автоматизации тестирования API для сайта [«Reqres»](https://reqres.in/)
 
 <div align="center">
-  <img src="src/test/java/images/reqres_api.png" alt="Много Диванов" width="1000"/>
+  <img src="src/test/java/images/reqres_api.png" alt="reqres_api" width="1000"/>
 </div>
 
 > Reqres - сервис, предоставляющий публичный API для практики тестирования и разработки
@@ -78,13 +78,13 @@
 
 ### 🏠 Основная страница
 <div align="center">
-  <img src="src/test/java/images/jenkins_api.png" alt="Много Диванов" width="800"/>
+  <img src="src/test/java/images/jenkins_api.png" alt="jenkins_api" width="800"/>
 </div>
 
 ### 🧾 Тест-кейсы
 
 <div align="center">
-  <img src="src/test/java/images/allure_api_tests.png" alt="Много Диванов" width="800"/>
+  <img src="src/test/java/images/allure_api_tests.png" alt="allure_api_tests" width="800"/>
 </div>
 
 ---
@@ -94,13 +94,13 @@
 ### 🤖 Авто-тесты
 
 <div align="center">
-  <img src="src/test/java/images/testOps_auto.png" alt="Много Диванов" width="800"/>
+  <img src="src/test/java/images/testOps_auto.png" alt="testOps_auto" width="800"/>
 </div>
 
 ### 👨‍🔧 Ручные тесты
 
 <div align="center">
-  <img src="src/test/java/images/testOps_manual.png" alt="Много Диванов" width="800"/>
+  <img src="src/test/java/images/testOps_manual.png" alt="testOps_manual" width="800"/>
 </div>
 
 ---
@@ -110,7 +110,7 @@
 Результаты автопрогонов автоматически отображаются прямо в задаче Jira — статус тестов, ссылки на Allure отчет и подробная информация о прохождении. 🚀
 
 <div align="center">
-  <img src="src/test/java/images/jira_api.png" alt="Много Диванов" width="800"/>
+  <img src="src/test/java/images/jira_api.png" alt="jira_api" width="800"/>
 </div>
 
 ---
@@ -120,7 +120,7 @@
 По итогам каждого прогона в Telegram-бот отправляется отчет со статистикой прохождения тестов. 📬
 
 <div align="center">
-  <img src="src/test/java/images/Screenshot_4.png" alt="Много Диванов" width="300"/>
+  <img src="src/test/java/images/Screenshot_4.png" alt="telegram" width="300"/>
 </div>
 
 ---
