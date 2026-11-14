@@ -1,7 +1,7 @@
 # Проект по автоматизации тестирования API для сайта [«Reqres»](https://reqres.in/)
 
 <div align="center">
-  <img src="src/test/java/images/reqres_api.png" alt="reqres_api" width="1000"/>
+  <img src="docs/images/reqres_api.png" alt="reqres_api" width="1000"/>
 </div>
 
 > Reqres - сервис, предоставляющий публичный API для практики тестирования и разработки
@@ -45,11 +45,11 @@
 
 ---
 
-## ⚙️ Сборка Jenkins
+## ⚙️ Сборка [Jenkins](https://jenkins.qa.guru/view/java_students/job/42_kovalyov_final_api_tests/)
 
 <div align="center">
   <!-- 🖼️ Сюда вставь скриншот сборки Jenkins -->
-  <img src="src/test/java/images/jenkins_api.png" alt="Jenkins Build" width="800"/>
+  <img src="docs/images/jenkins_api.png" alt="Jenkins Build" width="800"/>
 </div>
 
 ---
@@ -74,43 +74,43 @@
 
 ---
 
-## 📊 Allure отчет
+## 📊 [Allure](https://jenkins.qa.guru/view/java_students/job/42_kovalyov_final_api_tests/4/allure/) отчет
 
 ### 🏠 Основная страница
 <div align="center">
-  <img src="src/test/java/images/jenkins_api.png" alt="jenkins_api" width="800"/>
+  <img src="docs/images/jenkins_api.png" alt="jenkins_api" width="800"/>
 </div>
 
 ### 🧾 Тест-кейсы
 
 <div align="center">
-  <img src="src/test/java/images/allure_api_tests.png" alt="allure_api_tests" width="800"/>
+  <img src="docs/images/allure_api_tests.png" alt="allure_api_tests" width="800"/>
 </div>
 
 ---
 
-## 🧪 Интеграция Allure TestOps
+## 🧪 Интеграция [Allure TestOps](https://allure.qa.guru/project/5429/test-cases?treeId=0)
 
 ### 🤖 Авто-тесты
 
 <div align="center">
-  <img src="src/test/java/images/testOps_auto.png" alt="testOps_auto" width="800"/>
+  <img src="docs/images/testOps_auto.png" alt="testOps_auto" width="800"/>
 </div>
 
 ### 👨‍🔧 Ручные тесты
 
 <div align="center">
-  <img src="src/test/java/images/testOps_manual.png" alt="testOps_manual" width="800"/>
+  <img src="docs/images/testOps_manual.png" alt="testOps_manual" width="800"/>
 </div>
 
 ---
 
-## 🔗 Интеграция с Jira
+## 🔗 Интеграция с [Jira](https://jira.qa.guru/browse/MUL-72)
 
 Результаты автопрогонов автоматически отображаются прямо в задаче Jira — статус тестов, ссылки на Allure отчет и подробная информация о прохождении. 🚀
 
 <div align="center">
-  <img src="src/test/java/images/jira_api.png" alt="jira_api" width="800"/>
+  <img src="docs/images/jira_api.png" alt="jira_api" width="800"/>
 </div>
 
 ---
@@ -120,7 +120,7 @@
 По итогам каждого прогона в Telegram-бот отправляется отчет со статистикой прохождения тестов. 📬
 
 <div align="center">
-  <img src="src/test/java/images/Screenshot_4.png" alt="telegram" width="300"/>
+  <img src="docs/images/Screenshot_4.png" alt="telegram" width="300"/>
 </div>
 
 ---
